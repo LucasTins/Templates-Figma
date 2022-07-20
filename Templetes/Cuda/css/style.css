@@ -1,0 +1,202 @@
+/*GLOBAIS*/
+body, h1, h2, h3, div, ul, li, p, a, span, img {
+  margin: 0;
+  padding: 0 ;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  
+}
+
+.container {
+  width: 1100px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.botao {
+  display: block;
+  width: 294px;
+  height: 70px;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20px;
+  padding-top: 25px;
+  border: 1px solid #000;
+  background-color: #EB7D4B;
+  border-radius: 4px;
+}
+
+.titulo,
+.sub-titulo {
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2.5em;
+}
+
+.sub-titulo {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.paragrafo,
+.paragrafo-menor {
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.paragrafo {
+  font-size: 1.125em;
+}
+
+/*HEADER*/
+
+.header-bg,
+.home-bg {
+  width: 100%;
+  background-color: #87509C;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.header-menu a {
+  font-size: 1em;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 12px 8px;
+}
+
+/*HOME*/
+.home {
+  display: grid;
+  justify-items: center;
+  padding: 100px 0;
+}
+
+.home h1 {
+  text-shadow: 0 8px 8px black;
+}
+
+.borda-texto{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  }
+
+/*Serviços*/
+
+.servicos-bg {
+  background-color: #17C2A4;
+}
+
+.servicos h1,
+.equipe h1 {
+  display: flex;
+  padding-top: 60px;
+  position: relative;
+  justify-content: center;
+}
+
+.servicos h1::after,
+.equipe h1::after {
+  content: "";
+  display: block;
+  width: 87px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  opacity: 0.15;
+  bottom: -10px;
+  
+}
+
+.servicos p,
+.equipe p {
+  margin-top: 20px;
+}
+
+
+.servicos-lista,
+.equipe-lista,
+.habilidades-lista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+  padding: 100px 0;
+  text-align: center;
+  justify-items: center;
+}
+
+.servicos-item h2 {
+  padding: 40px 0 0 0;
+}
+
+/*EQUIPE*/
+.equipe-bg {
+  background-color: #E7F1F8;
+}
+
+.equipe,
+.equipe h1,
+.equipe h2,
+.equipe p,
+.habilidades,
+.habilidades h1,
+.habilidades h2,
+.habilidades p{
+  color: #3C4761;
+}
+
+.equipe span {
+  color: #30BAE7;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.redes-sociais li img {
+  display: block;
+  box-sizing: border-box;
+  padding: 12px 0;
+}
+
+/*SKILLS*/
+.habilidades-bg {
+  background-color: #fff;
+}
+
+.habilidades-circulo {
+  width: 140px;
+  height: 140px;
+  border: double 10px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00 45px,#3020ff 0px);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
